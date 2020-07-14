@@ -1,23 +1,23 @@
 # frozen_string_literal: true
 
-require_relative 'lib/info/version'
+require_relative 'lib/info/description'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'info'
-  spec.version       = Info::VERSION
-  spec.authors       = ['Igor Rocha']
-  spec.email         = ['igortice@gmail.com']
+  spec.name    = Info::NAME
+  spec.version = Info::VERSION
+  spec.authors = [Info::AUTHORS[0][:name]]
+  spec.email   = [Info::AUTHORS[0][:email]]
 
-  spec.summary       = 'Simple gem rails for configurations of global information.'
-  spec.description   = 'This gem is to provide a simple way of storing information in one place and get this information anywhere in a Rails application.'
-  spec.homepage      = 'https://github.com/igortice/info'
-  spec.license       = 'MIT'
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
+  spec.summary               = Info::SUMMARY
+  spec.description           = Info::DESCRIPTION
+  spec.homepage              = Info::HOMEPAGE
+  spec.license               = Info::LICENSE
+  spec.required_ruby_version = Gem::Requirement.new('>= 2.3.8')
 
   spec.metadata['allowed_push_host'] = 'https://github.com/igortice/info'
 
-  spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/igortice/info'
+  spec.metadata['homepage_uri']    = spec.homepage
+  spec.metadata['source_code_uri'] = spec.homepage
   # spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
