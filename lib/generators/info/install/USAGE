@@ -1,0 +1,7 @@
+Description:
+
+  Generate files in:
+    config/info/
+      - development.yml
+      - production.yml
+      - test.yml
